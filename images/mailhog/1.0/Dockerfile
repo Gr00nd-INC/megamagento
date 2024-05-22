@@ -2,7 +2,7 @@
 # MailHog Dockerfile
 #
 
-FROM golang:1.17.9-alpine
+FROM golang:1.20.11-alpine
 
 # Install MailHog:
 RUN apk --no-cache add --virtual build-dependencies \
