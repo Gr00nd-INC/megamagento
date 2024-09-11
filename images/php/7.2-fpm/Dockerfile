@@ -10,7 +10,7 @@ RUN if [ $(uname -m) = "x86_64" ]; then mailhog_arch="amd64"; else mailhog_arch=
     && go get . \
     && GOOS=linux GOARCH=${mailhog_arch} go build -o mhsendmail .
 
-FROM php:7.2-fpm
+FROM php:7.4-fpm
 
 ARG MAGENTO_ROOT=/app
 
